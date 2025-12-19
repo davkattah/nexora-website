@@ -105,6 +105,50 @@ body {
     background: #f4f6f9;
 }
 
+
+
+
+/* Projects Section */
+.projects-intro {
+    max-width: 800px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.project-box {
+    background: #ffffff;
+    padding: 30px;
+    border-left: 4px solid #0b1f3a;
+}
+
+.project-box h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.project-tag {
+    display: block;
+    font-size: 12px;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
+
+
+
 /* Services */
 .services-grid {
     display: grid;
