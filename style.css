@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    color: #1f2933;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #0b1f3a;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.logo-sub {
+    color: #9fb6d9;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #0b1f3a, #143a66);
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #ffffff;
+    color: #0b1f3a;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    padding: 70px 0;
+}
+
+.section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.light {
+    background: #f4f6f9;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: #ffffff;
+    padding: 25px;
+    border-left: 4px solid #0b1f3a;
+}
+
+/* Footer */
+.footer {
+    background: #0b1f3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* About Section Enhancements */
+.about-intro {
+    font-size: 17px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about-box {
+    background: #ffffff;
+    padding: 30px;
+    border-top: 3px solid #0b1f3a;
+}
+
+.about-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* Services Enhancements */
+.services-intro {
+    font-size: 17px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.service-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* Leadership Section */
+.leader-box {
+    max-width: 900px;
+}
+
+.leader-text h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.leader-title {
+    font-size: 13px;
+    color: #4b5563;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.leader-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Section */
+.contact-intro {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contact-form {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-top: 3px solid #0b1f3a;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background: #0b1f3a;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-details p {
+    font-size: 14px;
+}
+
+
+/* Subtle Animations */
+.section,
+.service-box,
+.about-box,
+.leader-box,
+.contact-form {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible,
+.service-box.visible,
+.about-box.visible,
+.leader-box.visible,
+.contact-form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects */
+.service-box:hover,
+.about-box:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
